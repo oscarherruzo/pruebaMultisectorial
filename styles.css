@@ -1477,7 +1477,7 @@ strong {
   align-items: center;
   gap: 0;
   width: max-content;
-  animation: desplazar-logos 35s linear infinite;
+  animation: desplazar-logos 40s linear infinite; 
 }
 
 /* Pausar al hacer hover */
@@ -2334,7 +2334,62 @@ strong {
     opacity: 1 !important;
     transform: none !important;
   }
+/* ─────────────────────────────────────────────────────────────
+   HERO: CROSSFADE DE 3 IMÁGENES DE FONDO
+   ───────────────────────────────────────────────────────────── */
 
+.slide-fondo {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 40%;
+  opacity: 0;
+  filter: saturate(0.7) brightness(0.55);
+  animation: crossfade-slide 18s infinite;
+  will-change: opacity;
+}
+
+/* Imagen 1: Feria al aire libre con pabellones */
+.slide-fondo--1 {
+  background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&q=80&auto=format&fit=crop');
+  animation-delay: 0s;
+}
+
+/* Imagen 2: Interior de feria con expositores */
+.slide-fondo--2 {
+  background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80&auto=format&fit=crop');
+  animation-delay: 6s;
+}
+
+/* Imagen 3: Landscape de Andalucía / campo de olivos */
+.slide-fondo--3 {
+  background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80&auto=format&fit=crop');
+  animation-delay: 12s;
+}
+
+/*
+  Ciclo: 18s totales, 3 imágenes = 6s cada una.
+  Cada imagen: fade in (0→1) en 1s, visible 4s, fade out (1→0) en 1s.
+  0%   = opacidad 0 (invisible, espera turno)
+  5%   = opacidad 1 (fundido de entrada)
+  33%  = opacidad 1 (visible durante su turno)
+  38%  = opacidad 0 (fundido de salida)
+  100% = opacidad 0 (espera al siguiente ciclo)
+*/
+@keyframes crossfade-slide {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  33%  { opacity: 1; }
+  38%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Desactiva el crossfade si el usuario prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .slide-fondo--1 { opacity: 1; animation: none; }
+  .slide-fondo--2,
+  .slide-fondo--3 { opacity: 0; animation: none; }
+}
 }
 
 
