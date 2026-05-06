@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Feria Multisectorial 2026 de Andújar. El encuentro empresarial y comercial más importante de la comarca de La Loma. Organizada por el Ayuntamiento de Andújar." />
+  <meta name="author" content="Ayuntamiento de Andújar" />
+
+  <!-- Open Graph / Compartir en redes -->
+  <meta property="og:title" content="Feria Multisectorial Andújar 2026" />
+  <meta property="og:description" content="El encuentro empresarial y comercial más importante de la comarca. 18, 19 y 20 de septiembre de 2026." />
+  <meta property="og:image" content="assets/img/og-imagen-compartir.jpg" />
+  <meta property="og:url" content="https://feriaandujar2026.es" />
+  <meta property="og:type" content="website" />
+
+  <title>Feria Multisectorial 2026 · Andújar</title>
+
+  <!-- Fuentes: Cormorant Garamond (titulares elegantes) + DM Sans (texto legible) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon (coloca el archivo en assets/img/favicon.ico) -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       CABECERA PRINCIPAL Y NAVEGACIÓN
+       ============================================================ -->
+  <header class="cabecera-principal" id="inicio">
+
+    <!-- Franja superior institucional -->
+    <div class="franja-institucional">
+      <div class="contenedor-centrado">
+        <!-- EDITABLE: Texto de la franja institucional -->
+        <span class="texto-institucion">Ayuntamiento de Andújar · Concejalía de Economía y Desarrollo Local</span>
+        <div class="iconos-redes-mini">
+          <!-- EDITABLE: URLs de redes sociales del Ayuntamiento -->
+          <a href="https://www.facebook.com/ayuntamientoandujar" target="_blank" rel="noopener" aria-label="Facebook Ayuntamiento de Andújar" class="enlace-red-social">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/ayto_andujar" target="_blank" rel="noopener" aria-label="Instagram Ayuntamiento de Andújar" class="enlace-red-social">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://twitter.com/ayto_andujar" target="_blank" rel="noopener" aria-label="Twitter Ayuntamiento de Andújar" class="enlace-red-social">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de navegación principal -->
+    <nav class="barra-navegacion" role="navigation" aria-label="Navegación principal">
+      <div class="contenedor-centrado navegacion-interior">
+
+        <!-- Logo del Ayuntamiento -->
+        <a href="#inicio" class="enlace-logo" aria-label="Inicio - Feria Multisectorial Andújar 2026">
+          <!-- EDITABLE: Sustituye el src por la ruta real de tu logo del Ayuntamiento -->
+          <img
+            src="assets/img/logo-ayuntamiento-andujar.svg"
+            alt="Escudo y logo del Ayuntamiento de Andújar"
+            class="logo-ayuntamiento"
+            width="48"
+            height="48"
+          />
+          <!-- Texto junto al logo (se oculta en móvil pequeño) -->
+          <span class="nombre-evento-nav">
+            <strong>Feria Multisectorial</strong>
+            <em>Andújar 2026</em>
+          </span>
+        </a>
+
+        <!-- Menú de navegación escritorio -->
+        <ul class="menu-principal" role="list">
+          <li><a href="#inicio" class="enlace-menu">Inicio</a></li>
+          <li><a href="#programa" class="enlace-menu">Programa</a></li>
+          <li><a href="#sectores" class="enlace-menu">Sectores</a></li>
+          <li><a href="#expositores" class="enlace-menu">Expositores</a></li>
+          <li><a href="#contacto" class="enlace-menu enlace-menu--cta">Contacto</a></li>
+        </ul>
+
+        <!-- Botón hamburguesa (solo móvil) -->
+        <button
+          class="boton-menu-movil"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="menu-movil-panel"
+          id="boton-hamburguesa"
+        >
+          <span class="linea-hamburguesa"></span>
+          <span class="linea-hamburguesa"></span>
+          <span class="linea-hamburguesa"></span>
+        </button>
+
+      </div>
+
+      <!-- Panel del menú móvil (se activa con JS) -->
+      <div class="panel-menu-movil" id="menu-movil-panel" aria-hidden="true">
+        <ul class="menu-movil-lista" role="list">
+          <li><a href="#inicio" class="enlace-menu-movil">Inicio</a></li>
+          <li><a href="#programa" class="enlace-menu-movil">Programa</a></li>
+          <li><a href="#sectores" class="enlace-menu-movil">Sectores</a></li>
+          <li><a href="#expositores" class="enlace-menu-movil">Expositores</a></li>
+          <li><a href="#contacto" class="enlace-menu-movil enlace-menu-movil--destacado">Contacto</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       PORTADA / HERO PRINCIPAL
+       ============================================================ -->
+  <section class="portada-principal" id="portada" aria-label="Sección principal de la Feria">
+
+    <!-- EDITABLE: Sustituye el src por tu imagen principal de banner.
+         Resolución recomendada: 1920×1080px mínimo. -->
+    <div class="fondo-portada">
+      <img
+        src="assets/img/banner-principal.jpg"
+        alt="Vista panorámica del recinto ferial de Andújar durante la Feria Multisectorial"
+        class="imagen-portada"
+        fetchpriority="high"
+        loading="eager"
+      />
+      <div class="capa-oscura-portada" aria-hidden="true"></div>
+    </div>
+
+    <!-- Contenido textual del hero -->
+    <div class="contenedor-centrado contenido-portada">
+
+      <!-- Etiqueta de categoría -->
+      <!-- EDITABLE: Texto de la etiqueta superior -->
+      <span class="etiqueta-evento">Ayuntamiento de Andújar · Evento Oficial 2026</span>
+
+      <!-- Titular principal -->
+      <!-- EDITABLE: Titular principal del evento -->
+      <h1 class="titular-portada">
+        Feria <em>Multisectorial</em><br />
+        de Andújar
+      </h1>
+
+      <!-- Subtitular / descripción corta -->
+      <!-- EDITABLE: Texto descriptivo bajo el titular -->
+      <p class="subtitular-portada">
+        El mayor encuentro empresarial y comercial de la comarca.<br />
+        Industria, agricultura, servicios y artesanía bajo un mismo techo.
+      </p>
+
+      <!-- Datos del evento: fechas y lugar -->
+      <div class="datos-evento" aria-label="Fechas y lugar del evento">
+        <!-- EDITABLE: Fechas del evento -->
+        <div class="dato-evento">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>18, 19 y 20 de Septiembre de 2026</span>
+        </div>
+        <!-- EDITABLE: Lugar del evento -->
+        <div class="dato-evento">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Recinto Ferial Municipal, Andújar (Jaén)</span>
+        </div>
+        <!-- EDITABLE: Horario del evento -->
+        <div class="dato-evento">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Viernes a Domingo · 10:00 – 21:00 h</span>
+        </div>
+      </div>
+
+      <!-- Llamadas a la acción -->
+      <div class="grupo-botones-cta">
+        <!-- EDITABLE: Enlace de descarga del programa (PDF) -->
+        <a
+          href="assets/docs/programa-feria-andujar-2026.pdf"
+          download
+          class="boton-primario"
+          aria-label="Descargar programa completo de la Feria en PDF"
+        >
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar Programa
+        </a>
+        <!-- EDITABLE: Enlace a la sección de contacto o inscripción -->
+        <a href="#expositores" class="boton-secundario">
+          Inscribirse como Expositor
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Indicador de scroll animado -->
+    <div class="indicador-scroll" aria-hidden="true">
+      <span class="flecha-scroll"></span>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       BANDA DE CIFRAS CLAVE (ESTADÍSTICAS RÁPIDAS)
+       ============================================================ -->
+  <section class="banda-cifras" aria-label="Cifras destacadas del evento">
+    <div class="contenedor-centrado cuadricula-cifras">
+
+      <!-- EDITABLE: Modifica los números y etiquetas según datos reales -->
+      <div class="cifra-destacada">
+        <strong class="numero-cifra" data-objetivo="150">150<span>+</span></strong>
+        <span class="etiqueta-cifra">Empresas Expositoras</span>
+      </div>
+      <div class="cifra-separador" aria-hidden="true"></div>
+      <div class="cifra-destacada">
+        <strong class="numero-cifra" data-objetivo="12">12</strong>
+        <span class="etiqueta-cifra">Sectores Representados</span>
+      </div>
+      <div class="cifra-separador" aria-hidden="true"></div>
+      <div class="cifra-destacada">
+        <strong class="numero-cifra" data-objetivo="20000">+20.000</strong>
+        <span class="etiqueta-cifra">Visitantes Esperados</span>
+      </div>
+      <div class="cifra-separador" aria-hidden="true"></div>
+      <div class="cifra-destacada">
+        <strong class="numero-cifra" data-objetivo="3">3</strong>
+        <span class="etiqueta-cifra">Días de Feria</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: PRESENTACIÓN / QUÉ ES LA FERIA
+       ============================================================ -->
+  <section class="presentacion-feria" id="presentacion" aria-labelledby="titulo-presentacion">
+    <div class="contenedor-centrado cuadricula-presentacion">
+
+      <!-- Columna de texto -->
+      <div class="columna-texto-presentacion">
+        <!-- EDITABLE: Etiqueta de sección -->
+        <span class="etiqueta-seccion">Sobre la Feria</span>
+        <!-- EDITABLE: Título principal de la sección -->
+        <h2 class="titulo-seccion" id="titulo-presentacion">
+          Un espacio para el<br />
+          <em>encuentro y el negocio</em>
+        </h2>
+        <!-- EDITABLE: Párrafos descriptivos de la feria -->
+        <p class="parrafo-presentacion">
+          La <strong>Feria Multisectorial de Andújar 2026</strong> nace como el punto de encuentro entre empresas, profesionales, instituciones y ciudadanos de toda la comarca de La Loma y Sierra Morena. Tres intensas jornadas para hacer networking, conocer novedades del sector y cerrar acuerdos.
+        </p>
+        <p class="parrafo-presentacion">
+          Organizada por el Ayuntamiento de Andújar a través de su Concejalía de Economía, esta feria apuesta por la economía local, la innovación y la diversidad sectorial, desde la agroindustria y el aceite de oliva hasta las nuevas tecnologías y los servicios profesionales.
+        </p>
+        <!-- EDITABLE: Puntos fuertes del evento -->
+        <ul class="lista-ventajas">
+          <li class="item-ventaja">
+            <span class="icono-check" aria-hidden="true"></span>
+            Acceso libre y gratuito para el público
+          </li>
+          <li class="item-ventaja">
+            <span class="icono-check" aria-hidden="true"></span>
+            Jornadas profesionales y ruedas de negocio
+          </li>
+          <li class="item-ventaja">
+            <span class="icono-check" aria-hidden="true"></span>
+            Espacio de exposición cubierto y al aire libre
+          </li>
+          <li class="item-ventaja">
+            <span class="icono-check" aria-hidden="true"></span>
+            Actividades paralelas, degustaciones y conferencias
+          </li>
+        </ul>
+        <!-- EDITABLE: Enlace de la CTA de la sección -->
+        <a href="#programa" class="enlace-conocer-mas">
+          Ver el programa completo
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- Columna de imagen -->
+      <div class="columna-imagen-presentacion">
+        <!-- EDITABLE: Imagen de presentación. Recomendado: 800×700px, ratio aprox. 4:3 -->
+        <figure class="figura-presentacion">
+          <img
+            src="assets/img/presentacion-feria.jpg"
+            alt="Expositores y visitantes en el pabellón principal de la Feria Multisectorial de Andújar"
+            class="imagen-presentacion"
+            loading="lazy"
+            width="600"
+            height="500"
+          />
+          <!-- EDITABLE: Pie de foto -->
+          <figcaption class="pie-imagen-presentacion">
+            Edición anterior · Recinto Ferial de Andújar
+          </figcaption>
+        </figure>
+        <!-- Elemento decorativo de fondo -->
+        <div class="decoracion-fondo-imagen" aria-hidden="true"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: SECTORES PARTICIPANTES
+       ============================================================ -->
+  <section class="seccion-sectores" id="sectores" aria-labelledby="titulo-sectores">
+    <div class="contenedor-centrado">
+
+      <!-- Encabezado de sección -->
+      <div class="encabezado-seccion">
+        <!-- EDITABLE: Etiqueta y título de la sección de sectores -->
+        <span class="etiqueta-seccion etiqueta-seccion--clara">Participación Sectorial</span>
+        <h2 class="titulo-seccion titulo-seccion--claro" id="titulo-sectores">
+          Doce sectores,<br /><em>una sola feria</em>
+        </h2>
+        <!-- EDITABLE: Descripción de la sección de sectores -->
+        <p class="descripcion-seccion">
+          La Feria Multisectorial reúne a empresas de los principales sectores productivos de la provincia de Jaén y el sur de España.
+        </p>
+      </div>
+
+      <!-- Cuadrícula de tarjetas de sector -->
+      <div class="cuadricula-sectores" role="list">
+
+        <!-- EDITABLE: Repite este bloque para cada sector.
+             Puedes cambiar el emoji/icono, el título y la descripción. -->
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <!-- EDITABLE: Sustituye por <img src="assets/img/iconos/icono-sector-agroindustria.svg"> si tienes iconos propios -->
+            <span class="simbolo-sector">🫒</span>
+          </div>
+          <h3 class="nombre-sector">Agroindustria y Aceite de Oliva</h3>
+          <p class="descripcion-sector">Almazaras, cooperativas y tecnología para el sector oleícola, referente mundial de Jaén.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">🏗️</span>
+          </div>
+          <h3 class="nombre-sector">Construcción e Inmobiliaria</h3>
+          <p class="descripcion-sector">Promotoras, constructoras, materiales de construcción y arquitectura sostenible.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">💻</span>
+          </div>
+          <h3 class="nombre-sector">Tecnología e Innovación</h3>
+          <p class="descripcion-sector">Empresas digitales, startups, soluciones de software, automatización e Inteligencia Artificial.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">🌿</span>
+          </div>
+          <h3 class="nombre-sector">Agricultura y Ganadería</h3>
+          <p class="descripcion-sector">Maquinaria agrícola, fitosanitarios, semillas, ganadería extensiva y producción ecológica.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">⚗️</span>
+          </div>
+          <h3 class="nombre-sector">Industria y Manufactura</h3>
+          <p class="descripcion-sector">Industria química, metalmecánica, transformación y fabricación local e industrial.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">🍽️</span>
+          </div>
+          <h3 class="nombre-sector">Hostelería y Alimentación</h3>
+          <p class="descripcion-sector">Restaurantes, productos gourmet, distribuidoras alimentarias y turismo gastronómico.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">⚡</span>
+          </div>
+          <h3 class="nombre-sector">Energía y Medioambiente</h3>
+          <p class="descripcion-sector">Energías renovables, eficiencia energética, gestión ambiental y economía circular.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">🏥</span>
+          </div>
+          <h3 class="nombre-sector">Salud y Bienestar</h3>
+          <p class="descripcion-sector">Clínicas, farmacias, ópticas, terapias alternativas, deporte y bienestar personal.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">📚</span>
+          </div>
+          <h3 class="nombre-sector">Educación y Formación</h3>
+          <p class="descripcion-sector">Academias, centros formativos, FP, universidades y plataformas de e-learning.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">🧵</span>
+          </div>
+          <h3 class="nombre-sector">Artesanía y Comercio Local</h3>
+          <p class="descripcion-sector">Artesanos, comercio tradicional, moda, joyería y productos de proximidad del territorio.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">🚗</span>
+          </div>
+          <h3 class="nombre-sector">Automoción y Transporte</h3>
+          <p class="descripcion-sector">Concesionarios, talleres, logística, transporte de mercancías y vehículos eléctricos.</p>
+        </article>
+
+        <article class="tarjeta-sector" role="listitem">
+          <div class="icono-sector" aria-hidden="true">
+            <span class="simbolo-sector">💼</span>
+          </div>
+          <h3 class="nombre-sector">Servicios Profesionales</h3>
+          <p class="descripcion-sector">Asesorías, despachos jurídicos, gestorías, consultoría financiera y servicios empresariales.</p>
+        </article>
+
+      </div><!-- /cuadricula-sectores -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: PROGRAMA DEL EVENTO
+       ============================================================ -->
+  <section class="seccion-programa" id="programa" aria-labelledby="titulo-programa">
+    <div class="contenedor-centrado">
+
+      <!-- Encabezado de sección -->
+      <div class="encabezado-seccion">
+        <!-- EDITABLE: Etiqueta y título de la sección de programa -->
+        <span class="etiqueta-seccion">Agenda</span>
+        <h2 class="titulo-seccion" id="titulo-programa">
+          Programa <em>Oficial</em>
+        </h2>
+        <p class="descripcion-seccion">
+          Tres días repletos de actividades, conferencias y oportunidades de negocio.
+        </p>
+      </div>
+
+      <!-- Pestañas de días -->
+      <div class="selector-dias" role="tablist" aria-label="Seleccionar día del programa">
+        <!-- EDITABLE: Fechas de los días del programa -->
+        <button class="boton-dia activo" role="tab" aria-selected="true" aria-controls="dia-1" id="tab-dia-1" data-dia="1">
+          <span class="numero-dia">Día 1</span>
+          <span class="fecha-dia">Viernes, 18 Sep</span>
+        </button>
+        <button class="boton-dia" role="tab" aria-selected="false" aria-controls="dia-2" id="tab-dia-2" data-dia="2">
+          <span class="numero-dia">Día 2</span>
+          <span class="fecha-dia">Sábado, 19 Sep</span>
+        </button>
+        <button class="boton-dia" role="tab" aria-selected="false" aria-controls="dia-3" id="tab-dia-3" data-dia="3">
+          <span class="numero-dia">Día 3</span>
+          <span class="fecha-dia">Domingo, 20 Sep</span>
+        </button>
+      </div>
+
+      <!-- Panel de programa - Día 1 -->
+      <!-- EDITABLE: Modifica los eventos de cada día -->
+      <div class="panel-dia activo" id="dia-1" role="tabpanel" aria-labelledby="tab-dia-1">
+        <div class="linea-tiempo">
+
+          <div class="evento-programa evento-programa--inaugural">
+            <div class="hora-evento">10:00</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--institucional">Acto Oficial</span>
+              <h3 class="titulo-evento">Inauguración Oficial de la Feria Multisectorial 2026</h3>
+              <p class="descripcion-evento">Acto inaugural presidido por el Alcalde de Andújar y representantes institucionales de la Diputación Provincial de Jaén.</p>
+              <span class="lugar-evento">📍 Pabellón Central · Acceso libre</span>
+            </div>
+          </div>
+
+          <div class="evento-programa">
+            <div class="hora-evento">11:30</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--conferencia">Conferencia</span>
+              <h3 class="titulo-evento">El futuro del aceite de oliva: innovación y mercados internacionales</h3>
+              <p class="descripcion-evento">Mesa redonda con directivos de las principales cooperativas oleícolas de Jaén y representantes de organismos exportadores.</p>
+              <span class="lugar-evento">📍 Sala de Conferencias A · Aforo limitado</span>
+            </div>
+          </div>
+
+          <div class="evento-programa">
+            <div class="hora-evento">13:00</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--degustacion">Degustación</span>
+              <h3 class="titulo-evento">Showcooking y cata de aceites de oliva virgen extra</h3>
+              <p class="descripcion-evento">Demostración culinaria a cargo de chef local con AOVE de producción comarcal. Degustación abierta al público.</p>
+              <span class="lugar-evento">📍 Zona Gastronómica · Acceso libre</span>
+            </div>
+          </div>
+
+          <div class="evento-programa">
+            <div class="hora-evento">16:00</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--networking">Networking</span>
+              <h3 class="titulo-evento">Jornada de Networking Empresarial: Conecta con el tejido productivo de Jaén</h3>
+              <p class="descripcion-evento">Sesión de contactos profesionales entre expositores y visitantes del sector industrial y tecnológico. Registro previo recomendado.</p>
+              <span class="lugar-evento">📍 Espacio Business · Registro requerido</span>
+            </div>
+          </div>
+
+          <div class="evento-programa">
+            <div class="hora-evento">18:30</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--conferencia">Conferencia</span>
+              <h3 class="titulo-evento">Transformación digital para la PYME andaluza: casos de éxito</h3>
+              <p class="descripcion-evento">Casos reales de digitalización en empresas de la provincia con apoyo de fondos europeos y programas de la Junta de Andalucía.</p>
+              <span class="lugar-evento">📍 Sala de Conferencias B · Aforo limitado</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Panel de programa - Día 2 -->
+      <div class="panel-dia" id="dia-2" role="tabpanel" aria-labelledby="tab-dia-2" hidden>
+        <div class="linea-tiempo">
+
+          <div class="evento-programa">
+            <div class="hora-evento">10:00</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--conferencia">Conferencia</span>
+              <h3 class="titulo-evento">Energías renovables en el entorno rural: oportunidades y retos</h3>
+              <p class="descripcion-evento">Ponencia a cargo de representantes del sector energético andaluz sobre instalaciones fotovoltaicas y biomasa.</p>
+              <span class="lugar-evento">📍 Sala de Conferencias A · Aforo limitado</span>
+            </div>
+          </div>
+
+          <div class="evento-programa">
+            <div class="hora-evento">12:00</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--taller">Taller</span>
+              <h3 class="titulo-evento">Taller práctico: Cómo vender más con herramientas digitales gratuitas</h3>
+              <p class="descripcion-evento">Sesión práctica para comercios y autónomos sobre redes sociales, Google My Business y marketing de proximidad.</p>
+              <span class="lugar-evento">📍 Aula de Formación · Registro recomendado</span>
+            </div>
+          </div>
+
+          <div class="evento-programa">
+            <div class="hora-evento">16:00</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--institucional">Acto Oficial</span>
+              <h3 class="titulo-evento">Premios Empresa Andújar 2026: reconocimiento al tejido empresarial local</h3>
+              <p class="descripcion-evento">Ceremonia de entrega de los premios anuales del Ayuntamiento a empresas y emprendedores destacados del municipio.</p>
+              <span class="lugar-evento">📍 Pabellón Central · Acceso libre</span>
+            </div>
+          </div>
+
+          <div class="evento-programa">
+            <div class="hora-evento">19:00</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--cultural">Cultural</span>
+              <h3 class="titulo-evento">Concierto y espectáculo flamenco: el arte de Andújar en la feria</h3>
+              <p class="descripcion-evento">Actuación en vivo a cargo de artistas locales. Noche de cultura y música popular andaluza.</p>
+              <span class="lugar-evento">📍 Escenario Exterior · Acceso libre</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Panel de programa - Día 3 -->
+      <div class="panel-dia" id="dia-3" role="tabpanel" aria-labelledby="tab-dia-3" hidden>
+        <div class="linea-tiempo">
+
+          <div class="evento-programa">
+            <div class="hora-evento">10:30</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--taller">Taller</span>
+              <h3 class="titulo-evento">Emprendimiento joven: de la idea al negocio en Andújar</h3>
+              <p class="descripcion-evento">Jornada dirigida a jóvenes emprendedores con mentorías, casos de éxito y presentación de ayudas municipales al emprendimiento.</p>
+              <span class="lugar-evento">📍 Aula de Formación · Acceso libre</span>
+            </div>
+          </div>
+
+          <div class="evento-programa">
+            <div class="hora-evento">12:30</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--degustacion">Degustación</span>
+              <h3 class="titulo-evento">Mercado de productores locales: artesanía, alimentos y sabores de Andújar</h3>
+              <p class="descripcion-evento">Mercadillo de productores artesanales y agricultores de proximidad. Compra directa al productor.</p>
+              <span class="lugar-evento">📍 Plaza Exterior · Acceso libre</span>
+            </div>
+          </div>
+
+          <div class="evento-programa">
+            <div class="hora-evento">17:00</div>
+            <div class="contenido-evento">
+              <span class="tipo-evento tipo-evento--institucional">Acto Oficial</span>
+              <h3 class="titulo-evento">Clausura oficial y balance de la Feria Multisectorial 2026</h3>
+              <p class="descripcion-evento">Acto de cierre con presentación de resultados, datos de participación y anuncio de la edición 2027.</p>
+              <span class="lugar-evento">📍 Pabellón Central · Acceso libre</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CTA descarga programa -->
+      <div class="cta-descarga-programa">
+        <!-- EDITABLE: Ruta al PDF del programa oficial -->
+        <a href="assets/docs/programa-feria-andujar-2026.pdf" download class="boton-primario">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar Programa en PDF
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: EXPOSITORES / INSCRIPCIÓN
+       ============================================================ -->
+  <section class="seccion-expositores" id="expositores" aria-labelledby="titulo-expositores">
+    <div class="contenedor-centrado cuadricula-expositores">
+
+      <!-- Columna imagen -->
+      <div class="columna-imagen-expositores">
+        <!-- EDITABLE: Imagen del stand/expositor. Recomendado 700×600px -->
+        <figure class="figura-expositores">
+          <img
+            src="assets/img/expositores-stand.jpg"
+            alt="Stand de empresa expositora en el pabellón de la Feria Multisectorial de Andújar"
+            class="imagen-expositores"
+            loading="lazy"
+            width="600"
+            height="520"
+          />
+        </figure>
+      </div>
+
+      <!-- Columna de texto e información -->
+      <div class="columna-texto-expositores">
+        <!-- EDITABLE: Etiqueta y titulares de la sección -->
+        <span class="etiqueta-seccion">Participa como Expositor</span>
+        <h2 class="titulo-seccion" id="titulo-expositores">
+          Tu empresa en el<br />
+          <em>corazón de la feria</em>
+        </h2>
+        <!-- EDITABLE: Descripción de la oferta de exposición -->
+        <p class="parrafo-presentacion">
+          Reserva tu espacio en la Feria Multisectorial de Andújar 2026 y posiciona tu empresa ante miles de visitantes, periodistas y potenciales clientes de toda la provincia de Jaén.
+        </p>
+
+        <!-- Modelos de stand disponibles -->
+        <div class="cuadricula-tipos-stand">
+
+          <!-- EDITABLE: Tipos de stand y precios -->
+          <div class="tarjeta-stand">
+            <div class="nombre-stand">Stand Básico</div>
+            <div class="medida-stand">6 m²</div>
+            <div class="precio-stand">Desde <strong>380 €</strong></div>
+            <ul class="caracteristicas-stand">
+              <li>Módulo estándar equipado</li>
+              <li>1 punto de luz incluido</li>
+              <li>Acceso a zonas comunes</li>
+            </ul>
+          </div>
+
+          <div class="tarjeta-stand tarjeta-stand--destacada">
+            <span class="etiqueta-mas-solicitado">Más solicitado</span>
+            <div class="nombre-stand">Stand Profesional</div>
+            <div class="medida-stand">12 m²</div>
+            <div class="precio-stand">Desde <strong>620 €</strong></div>
+            <ul class="caracteristicas-stand">
+              <li>Módulo premium equipado</li>
+              <li>2 puntos de luz + TV</li>
+              <li>Conexión WiFi dedicada</li>
+              <li>Mención en materiales oficiales</li>
+            </ul>
+          </div>
+
+          <div class="tarjeta-stand">
+            <div class="nombre-stand">Stand Premium</div>
+            <div class="medida-stand">24 m² +</div>
+            <div class="precio-stand">Desde <strong>1.100 €</strong></div>
+            <ul class="caracteristicas-stand">
+              <li>Espacio a medida y diseño propio</li>
+              <li>Ubicación preferente</li>
+              <li>Logo en comunicaciones oficiales</li>
+              <li>Participación en rueda de prensa</li>
+            </ul>
+          </div>
+
+        </div><!-- /cuadricula-tipos-stand -->
+
+        <!-- EDITABLE: Enlace de inscripción/formulario de contacto -->
+        <div class="grupo-botones-cta">
+          <a href="#contacto" class="boton-primario">
+            Solicitar Información y Reservar
+          </a>
+          <a href="assets/docs/dossier-expositores-2026.pdf" download class="boton-secundario">
+            Descargar Dossier
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: CÓMO LLEGAR / UBICACIÓN
+       ============================================================ -->
+  <section class="seccion-ubicacion" id="ubicacion" aria-labelledby="titulo-ubicacion">
+    <div class="contenedor-centrado">
+
+      <div class="encabezado-seccion">
+        <!-- EDITABLE: Datos de la sección de ubicación -->
+        <span class="etiqueta-seccion">Cómo Llegar</span>
+        <h2 class="titulo-seccion" id="titulo-ubicacion">Recinto Ferial <em>Municipal</em></h2>
+        <p class="descripcion-seccion">Fácil acceso desde la A-4 (Madrid–Cádiz), con aparcamiento gratuito y servicio de transporte urbano especial.</p>
+      </div>
+
+      <div class="cuadricula-ubicacion">
+
+        <!-- Mapa (iframe de Google Maps) -->
+        <div class="contenedor-mapa">
+          <!-- EDITABLE: Sustituye el src del iframe por las coordenadas reales del recinto ferial de Andújar.
+               Para obtener tu iframe: Google Maps > Compartir > Insertar un mapa > Copiar HTML.
+               Las coordenadas actuales apuntan al centro de Andújar como referencia. -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12525.123456789!2d-4.048765!3d38.035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdd59d82c4f37%3A0x4a012c26db6d0e0!2sAnd%C3%BAjar%2C%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1234567890"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de ubicación del Recinto Ferial Municipal de Andújar"
+            aria-label="Mapa interactivo con la ubicación del Recinto Ferial de Andújar"
+          ></iframe>
+        </div>
+
+        <!-- Información de acceso -->
+        <div class="info-acceso">
+
+          <!-- EDITABLE: Dirección y datos de acceso -->
+          <div class="bloque-acceso">
+            <div class="icono-acceso" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong class="titulo-bloque-acceso">Dirección</strong>
+              <p class="texto-bloque-acceso">Recinto Ferial Municipal de Andújar<br />Av. de la Feria, s/n<br />23740 Andújar, Jaén</p>
+            </div>
+          </div>
+
+          <div class="bloque-acceso">
+            <div class="icono-acceso" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div>
+              <strong class="titulo-bloque-acceso">En coche</strong>
+              <p class="texto-bloque-acceso">Salida Andújar en la A-4 · Señalización feria desde rotonda de acceso. Aparcamiento gratuito para más de 2.000 vehículos.</p>
+            </div>
+          </div>
+
+          <div class="bloque-acceso">
+            <div class="icono-acceso" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div>
+              <strong class="titulo-bloque-acceso">Transporte urbano especial</strong>
+              <p class="texto-bloque-acceso">Servicio de autobús gratuito desde la Plaza de España y Estación de Tren. Salidas cada 30 minutos durante las jornadas.</p>
+            </div>
+          </div>
+
+          <div class="bloque-acceso">
+            <div class="icono-acceso" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <strong class="titulo-bloque-acceso">Alojamiento</strong>
+              <p class="texto-bloque-acceso">Andújar cuenta con varios hoteles y casas rurales. Consulta disponibilidad en los establecimientos colaboradores de la feria.</p>
+            </div>
+          </div>
+
+        </div><!-- /info-acceso -->
+
+      </div><!-- /cuadricula-ubicacion -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: CARRUSEL INFINITO DE LOGOS DE EMPRESAS
+       Estructura: lista de <a> > <img>. Duplicar el track para el bucle.
+       ============================================================ -->
+  <section class="seccion-carrusel-logos" aria-label="Empresas expositoras y colaboradoras">
+    <div class="contenedor-centrado encabezado-carrusel">
+      <!-- EDITABLE: Título del carrusel -->
+      <span class="etiqueta-seccion">Empresas Participantes</span>
+      <h2 class="titulo-carrusel">
+        Más de 150 empresas<br /><em>confían en la feria</em>
+      </h2>
+    </div>
+
+    <!-- Pista del carrusel (overflow hidden) -->
+    <div class="pista-carrusel" aria-hidden="true">
+      <!-- Track principal (se duplica desde JS para hacer el bucle infinito) -->
+      <ul class="track-carrusel" id="track-logos" role="list">
+
+        <!-- ===========================================================
+             EDITABLE: Logos de empresas expositoras y colaboradoras.
+             Formato: <li> > <a href="URL"> > <img src="ruta-logo">
+             Ajusta href, src y alt para cada empresa.
+             Resolución recomendada de logos: 200×80px, fondo transparente.
+             =========================================================== -->
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa1.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 1">
+            <img src="assets/img/logos/logo-empresa1.svg" alt="Logo de Empresa 1" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa2.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 2">
+            <img src="assets/img/logos/logo-empresa2.png" alt="Logo de Empresa 2" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa3.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 3">
+            <img src="assets/img/logos/logo-empresa3.svg" alt="Logo de Empresa 3" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa4.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 4">
+            <img src="assets/img/logos/logo-empresa4.png" alt="Logo de Empresa 4" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa5.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 5">
+            <img src="assets/img/logos/logo-empresa5.svg" alt="Logo de Empresa 5" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa6.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 6">
+            <img src="assets/img/logos/logo-empresa6.png" alt="Logo de Empresa 6" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa7.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 7">
+            <img src="assets/img/logos/logo-empresa7.svg" alt="Logo de Empresa 7" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa8.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 8">
+            <img src="assets/img/logos/logo-empresa8.png" alt="Logo de Empresa 8" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa9.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 9">
+            <img src="assets/img/logos/logo-empresa9.svg" alt="Logo de Empresa 9" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa10.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 10">
+            <img src="assets/img/logos/logo-empresa10.png" alt="Logo de Empresa 10" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa11.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 11">
+            <img src="assets/img/logos/logo-empresa11.svg" alt="Logo de Empresa 11" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+        <li class="logo-empresa">
+          <a href="https://www.empresa12.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar web de Empresa 12">
+            <img src="assets/img/logos/logo-empresa12.png" alt="Logo de Empresa 12" width="160" height="60" loading="lazy" />
+          </a>
+        </li>
+
+      </ul><!-- /track-logos -->
+    </div><!-- /pista-carrusel -->
+
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: CONTACTO E INSCRIPCIÓN
+       ============================================================ -->
+  <section class="seccion-contacto" id="contacto" aria-labelledby="titulo-contacto">
+    <div class="contenedor-centrado cuadricula-contacto">
+
+      <!-- Columna de información de contacto -->
+      <div class="columna-info-contacto">
+        <!-- EDITABLE: Datos institucionales de contacto -->
+        <span class="etiqueta-seccion etiqueta-seccion--clara">Contacto</span>
+        <h2 class="titulo-seccion titulo-seccion--claro" id="titulo-contacto">
+          ¿Tienes alguna<br /><em>pregunta?</em>
+        </h2>
+        <p class="parrafo-presentacion parrafo-presentacion--claro">
+          El equipo organizador de la Feria Multisectorial de Andújar está a tu disposición para resolver cualquier duda sobre expositores, programa, accesos o colaboraciones.
+        </p>
+
+        <div class="lista-datos-contacto">
+
+          <!-- EDITABLE: Dirección postal -->
+          <div class="dato-contacto">
+            <div class="icono-dato-contacto" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Dirección</strong>
+              <span>Ayuntamiento de Andújar<br />Plaza de Santa María, 1<br />23740 Andújar, Jaén</span>
+            </div>
+          </div>
+
+          <!-- EDITABLE: Teléfono de contacto -->
+          <div class="dato-contacto">
+            <div class="icono-dato-contacto" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6.5 6.5l1.86-1.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Teléfono</strong>
+              <!-- EDITABLE: Número de teléfono -->
+              <a href="tel:+34953500000" class="enlace-contacto">953 50 00 00</a>
+            </div>
+          </div>
+
+          <!-- EDITABLE: Correo electrónico de contacto -->
+          <div class="dato-contacto">
+            <div class="icono-dato-contacto" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Correo electrónico</strong>
+              <!-- EDITABLE: Email de contacto de la feria -->
+              <a href="mailto:feria2026@andujar.es" class="enlace-contacto">feria2026@andujar.es</a>
+            </div>
+          </div>
+
+          <!-- EDITABLE: Horario de atención -->
+          <div class="dato-contacto">
+            <div class="icono-dato-contacto" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Horario de atención</strong>
+              <span>Lunes a Viernes · 9:00 – 14:00 h</span>
+            </div>
+          </div>
+
+        </div><!-- /lista-datos-contacto -->
+
+      </div><!-- /columna-info-contacto -->
+
+      <!-- Formulario de contacto -->
+      <div class="columna-formulario">
+        <form class="formulario-contacto" id="formulario-contacto" novalidate aria-label="Formulario de contacto">
+          <h3 class="titulo-formulario">Envíanos un mensaje</h3>
+
+          <div class="campo-formulario">
+            <label for="nombre-contacto" class="etiqueta-campo">Nombre y apellidos <span aria-label="campo obligatorio">*</span></label>
+            <!-- EDITABLE: Atributos name del formulario si lo conectas a un backend -->
+            <input
+              type="text"
+              id="nombre-contacto"
+              name="nombre"
+              class="entrada-formulario"
+              placeholder="Ej: Antonio García López"
+              required
+              autocomplete="name"
+              aria-required="true"
+            />
+            <span class="mensaje-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="email-contacto" class="etiqueta-campo">Correo electrónico <span aria-label="campo obligatorio">*</span></label>
+            <input
+              type="email"
+              id="email-contacto"
+              name="email"
+              class="entrada-formulario"
+              placeholder="tucorreo@empresa.com"
+              required
+              autocomplete="email"
+              aria-required="true"
+            />
+            <span class="mensaje-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="empresa-contacto" class="etiqueta-campo">Empresa / Organización</label>
+            <input
+              type="text"
+              id="empresa-contacto"
+              name="empresa"
+              class="entrada-formulario"
+              placeholder="Nombre de tu empresa (opcional)"
+              autocomplete="organization"
+            />
+          </div>
+
+          <div class="campo-formulario">
+            <label for="asunto-contacto" class="etiqueta-campo">Asunto <span aria-label="campo obligatorio">*</span></label>
+            <select id="asunto-contacto" name="asunto" class="entrada-formulario entrada-formulario--select" required aria-required="true">
+              <option value="" disabled selected>Selecciona el motivo de tu consulta</option>
+              <!-- EDITABLE: Opciones del desplegable de asunto -->
+              <option value="expositor">Información para expositores</option>
+              <option value="colaboracion">Propuesta de colaboración o patrocinio</option>
+              <option value="prensa">Acreditación de prensa y medios</option>
+              <option value="programa">Consulta sobre el programa</option>
+              <option value="acceso">Información de accesos y transporte</option>
+              <option value="otro">Otro</option>
+            </select>
+            <span class="mensaje-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="mensaje-contacto" class="etiqueta-campo">Mensaje <span aria-label="campo obligatorio">*</span></label>
+            <textarea
+              id="mensaje-contacto"
+              name="mensaje"
+              class="entrada-formulario entrada-formulario--textarea"
+              placeholder="Escribe tu consulta aquí..."
+              rows="5"
+              required
+              aria-required="true"
+            ></textarea>
+            <span class="mensaje-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- Aviso legal / RGPD -->
+          <div class="campo-formulario campo-formulario--checkbox">
+            <label class="etiqueta-checkbox">
+              <input type="checkbox" name="privacidad" id="privacidad" required aria-required="true" />
+              <span class="texto-checkbox">
+                He leído y acepto la
+                <!-- EDITABLE: Enlace a la política de privacidad del Ayuntamiento -->
+                <a href="/politica-privacidad" class="enlace-legal" target="_blank" rel="noopener">Política de Privacidad</a>
+                del Ayuntamiento de Andújar.
+              </span>
+            </label>
+            <span class="mensaje-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="boton-primario boton-formulario" id="boton-enviar">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Enviar mensaje
+          </button>
+
+          <!-- Mensaje de confirmación (oculto por defecto) -->
+          <div class="mensaje-exito" id="mensaje-exito-formulario" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            ¡Mensaje enviado! Nos pondremos en contacto contigo en breve.
+          </div>
+
+        </form>
+      </div><!-- /columna-formulario -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PIE DE PÁGINA (FOOTER)
+       ============================================================ -->
+  <footer class="pie-pagina" role="contentinfo">
+
+    <!-- Banda superior del footer: logo + columnas de info -->
+    <div class="contenedor-centrado cuadricula-footer">
+
+      <!-- Columna 1: Logo e identidad institucional -->
+      <div class="columna-footer columna-footer--identidad">
+        <!-- EDITABLE: Logo del Ayuntamiento en el footer -->
+        <a href="#inicio" aria-label="Volver al inicio de la página">
+          <img
+            src="assets/img/logo-ayuntamiento-andujar-claro.svg"
+            alt="Escudo del Ayuntamiento de Andújar"
+            class="logo-footer"
+            width="60"
+            height="60"
+          />
+        </a>
+        <!-- EDITABLE: Texto institucional del footer -->
+        <p class="texto-footer-identidad">
+          <strong>Feria Multisectorial</strong><br />
+          Andújar 2026<br />
+          <em>18, 19 y 20 de Septiembre</em>
+        </p>
+        <p class="descripcion-footer">
+          Un evento organizado por el Ayuntamiento de Andújar a través de la Concejalía de Economía y Desarrollo Local.
+        </p>
+        <!-- Redes sociales del pie -->
+        <div class="redes-footer" aria-label="Redes sociales oficiales">
+          <!-- EDITABLE: URLs de las redes sociales del Ayuntamiento -->
+          <a href="https://www.facebook.com/ayuntamientoandujar" target="_blank" rel="noopener" aria-label="Facebook Oficial" class="icono-red-footer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/ayto_andujar" target="_blank" rel="noopener" aria-label="Instagram Oficial" class="icono-red-footer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://twitter.com/ayto_andujar" target="_blank" rel="noopener" aria-label="Twitter/X Oficial" class="icono-red-footer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/ayuntamientoandujar" target="_blank" rel="noopener" aria-label="YouTube Oficial" class="icono-red-footer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#1e2018"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Navegación rápida -->
+      <div class="columna-footer">
+        <h4 class="titulo-columna-footer">Navegación</h4>
+        <ul class="lista-footer" role="list">
+          <!-- EDITABLE: Links del footer de navegación -->
+          <li><a href="#inicio" class="enlace-footer">Inicio</a></li>
+          <li><a href="#presentacion" class="enlace-footer">Sobre la Feria</a></li>
+          <li><a href="#sectores" class="enlace-footer">Sectores</a></li>
+          <li><a href="#programa" class="enlace-footer">Programa Oficial</a></li>
+          <li><a href="#expositores" class="enlace-footer">Expositores</a></li>
+          <li><a href="#ubicacion" class="enlace-footer">Cómo Llegar</a></li>
+          <li><a href="#contacto" class="enlace-footer">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Descargables y recursos -->
+      <div class="columna-footer">
+        <h4 class="titulo-columna-footer">Recursos</h4>
+        <ul class="lista-footer" role="list">
+          <!-- EDITABLE: Links de descarga de documentos -->
+          <li>
+            <a href="assets/docs/programa-feria-andujar-2026.pdf" download class="enlace-footer">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Programa Oficial (PDF)
+            </a>
+          </li>
+          <li>
+            <a href="assets/docs/dossier-expositores-2026.pdf" download class="enlace-footer">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Dossier Expositores
+            </a>
+          </li>
+          <li>
+            <a href="assets/docs/reglamento-participacion.pdf" download class="enlace-footer">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Reglamento de Participación
+            </a>
+          </li>
+          <li>
+            <a href="assets/docs/plano-recinto-ferial.pdf" download class="enlace-footer">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Plano del Recinto Ferial
+            </a>
+          </li>
+          <li><a href="https://www.andujar.es" target="_blank" rel="noopener" class="enlace-footer">Web Oficial del Ayuntamiento</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Contacto rápido -->
+      <div class="columna-footer">
+        <h4 class="titulo-columna-footer">Contacto Directo</h4>
+        <address class="direccion-footer">
+          <!-- EDITABLE: Datos de contacto del footer -->
+          <p>
+            <strong>Concejalía de Economía</strong><br />
+            Ayuntamiento de Andújar<br />
+            Plaza de Santa María, 1<br />
+            23740 Andújar, Jaén
+          </p>
+          <p>
+            <a href="tel:+34953500000" class="enlace-footer">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6.5 6.5l1.86-1.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              953 50 00 00
+            </a>
+          </p>
+          <p>
+            <a href="mailto:feria2026@andujar.es" class="enlace-footer">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              feria2026@andujar.es
+            </a>
+          </p>
+        </address>
+        <!-- EDITABLE: Organizado por logos institucionales -->
+        <div class="logos-institucionales">
+          <p class="texto-organiza">Organizado por:</p>
+          <div class="fila-logos-inst">
+            <img src="assets/img/logo-ayuntamiento-andujar-claro.svg" alt="Ayuntamiento de Andújar" class="logo-inst" width="50" height="50" />
+            <img src="assets/img/logo-diputacion-jaen.svg" alt="Diputación de Jaén" class="logo-inst" width="50" height="50" />
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /cuadricula-footer -->
+
+    <!-- Barra inferior legal -->
+    <div class="barra-legal">
+      <div class="contenedor-centrado contenido-barra-legal">
+        <!-- EDITABLE: Año y textos legales del footer -->
+        <p class="texto-copyright">
+          &copy; 2026 Ayuntamiento de Andújar · Todos los derechos reservados
+        </p>
+        <nav aria-label="Navegación legal">
+          <ul class="lista-enlaces-legales" role="list">
+            <!-- EDITABLE: URLs de las páginas legales -->
+            <li><a href="/aviso-legal" class="enlace-legal-footer">Aviso Legal</a></li>
+            <li><a href="/politica-privacidad" class="enlace-legal-footer">Política de Privacidad</a></li>
+            <li><a href="/politica-cookies" class="enlace-legal-footer">Política de Cookies</a></li>
+            <li><a href="/accesibilidad" class="enlace-legal-footer">Accesibilidad</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- ============================================================
+       BOTÓN VOLVER ARRIBA (aparece al hacer scroll)
+       ============================================================ -->
+  <button
+    class="boton-volver-arriba"
+    id="boton-volver-arriba"
+    aria-label="Volver al inicio de la página"
+    hidden
+  >
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+
+  <!-- Script principal -->
+  <script src="main.js" defer></script>
+
+</body>
+</html>
