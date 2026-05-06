@@ -86,10 +86,22 @@
        PORTADA / HERO CON CROSSFADE
        ============================================================ -->
   <section class="portada-principal" id="portada" aria-label="Sección principal de la Feria">
-    <div class="fondo-portada">
-      <div class="slide-fondo slide-fondo--1" aria-hidden="true"></div>
-      <div class="slide-fondo slide-fondo--2" aria-hidden="true"></div>
-      <div class="slide-fondo slide-fondo--3" aria-hidden="true"></div>
+    <<div class="fondo-portada carrusel-hero">
+      <img
+        src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?auto=format&fit=crop&w=1920&q=80"
+        alt="Vista panorámica del recinto ferial de Andújar"
+        class="imagen-portada slide"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1920&q=80"
+        alt="Público en el recinto ferial"
+        class="imagen-portada slide"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?auto=format&fit=crop&w=1920&q=80"
+        alt="Stand y networking en la feria"
+        class="imagen-portada slide"
+      />
       <div class="capa-oscura-portada" aria-hidden="true"></div>
     </div>
 
@@ -602,18 +614,18 @@
       </div>
 
       <div class="cuadricula-ubicacion">
-        <div class="contenedor-mapa">
-          <iframe
-            src="https://maps.google.com/maps?q=Recinto+Ferial+Municipal+Andujar+Jaen+Spain&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="100%"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa de ubicación del Recinto Ferial Municipal de Andújar"
-          ></iframe>
-        </div>
+<div class="contenedor-mapa">
+  <iframe 
+    src="https://maps.google.com/maps?q=Recinto+Ferial,+And%C3%BAjar,+Ja%C3%A9n&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade" 
+    title="Ubicación exacta del Recinto Ferial de Andújar">
+  </iframe>
+</div>
 
         <div class="info-acceso">
           <div class="bloque-acceso">
@@ -661,39 +673,68 @@
   <!-- ============================================================
        CARRUSEL INFINITO DE LOGOS — HTML duplicado para CSS loop
        ============================================================ -->
-  <section class="seccion-carrusel-logos" aria-label="Empresas expositoras y colaboradoras">
+  <section class="seccion-carrusel-logos" aria-label="Empresas expositoras">
     <div class="contenedor-centrado encabezado-carrusel">
-      <span class="etiqueta-seccion">Empresas Participantes</span>
-      <h2 class="titulo-carrusel">Más de 150 empresas<br /><em>confían en la feria</em></h2>
+      <span class="etiqueta-seccion">Marcas Participantes</span>
+      <h2 class="titulo-carrusel">Más de 20 marcas<br /><em>del sector automoción</em></h2>
     </div>
 
-    <div class="pista-carrusel" aria-hidden="true">
-      <ul class="track-carrusel" role="list">
-        <!-- BLOQUE A — logos originales (10 items) -->
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/3d5229/ffffff?font=montserrat&text=AGROSUR" alt="AgroSur" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/556b38/ffffff?font=montserrat&text=TECH+JA%C3%89N" alt="Tech Jaén" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/8b5e3c/ffffff?font=montserrat&text=OLIVARES" alt="Olivares" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/4a4032/ffffff?font=montserrat&text=CONSTRUYE" alt="Construye" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/3d5229/ffffff?font=montserrat&text=MOTOR+JA%C3%89N" alt="Motor Jaén" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/556b38/ffffff?font=montserrat&text=GASTRO+LOMA" alt="Gastro Loma" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/7a8f5a/ffffff?font=montserrat&text=ENERG%C3%8DA+SUR" alt="Energía Sur" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/8b5e3c/ffffff?font=montserrat&text=AND%C3%9AJAR+360" alt="Andújar 360" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/4a4032/ffffff?font=montserrat&text=SIERRA+TOURS" alt="Sierra Tours" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/3d5229/ffffff?font=montserrat&text=IND.+SUR" alt="Ind. Sur" width="160" height="56" loading="lazy" /></a></li>
-        <!-- BLOQUE B — duplicado exacto para el bucle CSS (sin tabindex positivo) -->
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/3d5229/ffffff?font=montserrat&text=AGROSUR" alt="" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/556b38/ffffff?font=montserrat&text=TECH+JA%C3%89N" alt="" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/8b5e3c/ffffff?font=montserrat&text=OLIVARES" alt="" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/4a4032/ffffff?font=montserrat&text=CONSTRUYE" alt="" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/3d5229/ffffff?font=montserrat&text=MOTOR+JA%C3%89N" alt="" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/556b38/ffffff?font=montserrat&text=GASTRO+LOMA" alt="" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/7a8f5a/ffffff?font=montserrat&text=ENERG%C3%8DA+SUR" alt="" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/8b5e3c/ffffff?font=montserrat&text=AND%C3%9AJAR+360" alt="" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/4a4032/ffffff?font=montserrat&text=SIERRA+TOURS" alt="" width="160" height="56" loading="lazy" /></a></li>
-        <li class="logo-empresa" aria-hidden="true"><a href="#" tabindex="-1"><img src="https://placehold.co/160x56/3d5229/ffffff?font=montserrat&text=IND.+SUR" alt="" width="160" height="56" loading="lazy" /></a></li>
+    <div class="pista-carrusel" aria-hidden="true" style="overflow: hidden; width: 100%;">
+      <ul class="track-carrusel" role="list" style="display: flex; align-items: center; width: max-content !important; margin: 0; padding: 0; animation: desplazar-coches 30s linear infinite !important;">
+        
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Toyota.svg" alt="Toyota" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Ford_Motor_Company_Logo.svg" alt="Ford" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg" alt="Audi" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt="Mercedes Benz" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda_Logo.svg" alt="Honda" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" alt="Volkswagen" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Toyota.svg" alt="Toyota" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Ford_Motor_Company_Logo.svg" alt="Ford" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg" alt="Audi" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt="Mercedes Benz" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda_Logo.svg" alt="Honda" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
+        <li style="list-style: none; margin: 0 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" alt="Volkswagen" style="height: 50px; width: auto; object-fit: contain;" />
+        </li>
       </ul>
     </div>
   </section>
+
+  <style>
+    @keyframes desplazar-coches {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
 
 
   <!-- ============================================================
